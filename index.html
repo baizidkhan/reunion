@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>আশুগঞ্জ সার কারখানা হাফিজিয়া মাদ্রাসা - প্রাক্তন ছাত্র সম্মেলন ২০২৬</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset & Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Baloo 2', cursive;
+      background-color: #ffffff;
+      color: #000000;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header */
+    .header {
+      background-color: #000000;
+      color: #ffffff;
+      padding: 20px 0;
+      text-align: center;
+      border-bottom: 3px solid #000000;
+    }
+
+    .header h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    /* Main Content */
+    .main-content {
+      padding: 60px 0;
+    }
+
+    .page-title {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #000000;
+      border-bottom: 3px solid #000000;
+      display: inline-block;
+      padding-bottom: 10px;
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 1.3rem;
+      margin-bottom: 50px;
+      color: #333333;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Buttons */
+    .button-section {
+      text-align: center;
+      margin: 50px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 40px;
+      margin: 10px;
+      border: 2px solid #000000;
+      background-color: #000000;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    .btn-outline {
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    .btn-outline:hover {
+      background-color: #000000;
+      color: #ffffff;
+    }
+
+    /* Information Grid */
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      margin: 60px 0;
+    }
+
+    .info-card {
+      border: 2px solid #000000;
+      padding: 40px 30px;
+      text-align: center;
+      background-color: #ffffff;
+      transition: all 0.3s ease;
+    }
+
+    .info-card:hover {
+      background-color: #000000;
+      color: #ffffff;
+    }
+
+    .info-card h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #000000;
+      padding-bottom: 10px;
+    }
+
+    .info-card:hover h3 {
+      border-bottom-color: #ffffff;
+    }
+
+    .info-card p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      font-weight: 700;
+    }
+
+    /* Section Headers */
+    .section-header {
+      text-align: center;
+      margin: 80px 0 50px 0;
+    }
+
+    .section-header h2 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #000000;
+      border-bottom: 3px solid #000000;
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+
+    /* Process Steps */
+    .process-section {
+      background-color: #f8f8f8;
+      padding: 60px 0;
+      margin: 60px 0;
+      border-top: 3px solid #000000;
+      border-bottom: 3px solid #000000;
+    }
+
+    .steps-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+      margin-bottom: 40px;
+      padding: 30px;
+      border: 2px solid #000000;
+      background-color: #ffffff;
+      transition: all 0.3s ease;
+    }
+
+    .step:hover {
+      background-color: #000000;
+      color: #ffffff;
+    }
+
+    .step-number {
+      width: 60px;
+      height: 60px;
+      border: 3px solid #000000;
+      background-color: #ffffff;
+      color: #000000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+      transition: all 0.3s ease;
+    }
+
+    .step:hover .step-number {
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    .step-content h4 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .step-content p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      background-color: #000000;
+      color: #ffffff;
+      padding: 60px 0;
+      margin-top: 60px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      margin-bottom: 50px;
+    }
+
+    .contact-item {
+      text-align: center;
+      padding: 30px;
+      border: 2px solid #ffffff;
+      background-color: #000000;
+      transition: all 0.3s ease;
+    }
+
+    .contact-item:hover {
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    .contact-item h4 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #ffffff;
+      padding-bottom: 10px;
+    }
+
+    .contact-item:hover h4 {
+      border-bottom-color: #000000;
+    }
+
+    .contact-item p {
+      font-size: 1.1rem;
+      line-height: 1.4;
+    }
+
+    /* Important Dates */
+    .important-dates {
+      background-color: #ffffff;
+      color: #000000;
+      border: 3px solid #ffffff;
+      padding: 40px;
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .important-dates h3 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+      border-bottom: 2px solid #000000;
+      padding-bottom: 15px;
+    }
+
+    .date-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+      border-bottom: 1px solid #000000;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    .date-item:last-child {
+      border-bottom: none;
+    }
+
+    .date-value {
+      font-weight: 700;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #000000;
+      color: #ffffff;
+      text-align: center;
+      padding: 30px 0;
+      border-top: 3px solid #000000;
+    }
+
+    .footer p {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .page-title {
+        font-size: 2rem;
+        margin-left: 0;
+        transform: none;
+      }
+      
+      .subtitle {
+        font-size: 1.1rem;
+        padding: 0 20px;
+      }
+      
+      .info-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      
+      .step {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+      }
+      
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      
+      .date-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+      }
+      
+      .btn {
+        display: block;
+        margin: 10px auto;
+        width: 100%;
+        max-width: 300px;
+      }
+      
+      .section-header h2 {
+        font-size: 1.8rem;
+      }
+      
+      .main-content,
+      .process-section,
+      .contact-section {
+        padding: 40px 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 15px;
+      }
+      
+      .header h1 {
+        font-size: 1.4rem;
+      }
+      
+      .info-card,
+      .step,
+      .contact-item {
+        padding: 25px 20px;
+      }
+      
+      .page-title {
+        font-size: 1.8rem;
+      }
+      
+      .subtitle {
+        font-size: 1rem;
+      }
+      
+      .important-dates {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1>আশুগঞ্জ সার কারখানা হাফিজিয়া মাদ্রাসা</h1>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+      
+      <!-- Title Section -->
+      <h1 class="page-title">প্রাক্তন ছাত্র সম্মেলন ২০২৬</h1>
+      <p class="subtitle">আমাদের প্রিয় শিক্ষা প্রতিষ্ঠানের সকল প্রাক্তন ছাত্রদের নিয়ে একটি স্মরণীয় মিলনমেলা</p>
+
+      <!-- Action Buttons -->
+      <div class="button-section">
+        <button class="btn" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSeyBjCaea0Q_7WhkhRkduCF0d4yhlf4B7joJuLQj4zPf7fNRA/viewform?usp=dialog','_blank')">
+          রেজিস্ট্রেশন ফর্ম
+        </button>
+        <button class="btn btn-outline" onclick="window.open('https://docs.google.com/spreadsheets/d/1BR9MlHxg8ccrbXptxWoKQw8h5u2BT8fCibtte4GmIe0/edit?usp=sharing','_blank')">
+          প্রাক্তন ছাত্র তালিকা
+        </button>
+      </div>
+
+      <!-- Information Cards -->
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>তারিখ ও সময়</h3>
+          <p>
+            <span class="highlight">৩ জানুয়ারী, ২০২৬ (শনিবার)</span><br><br>
+            <span class="highlight">সকাল ৯:০০ টা</span> থেকে
+          </p>
+        </div>
+        <div class="info-card">
+          <h3>স্থান</h3>
+          <p>
+            <span class="highlight">আশুগঞ্জ ফার্টিলাইজার</span><br><br>
+            ব্রাহ্মণবাড়িয়া, বাংলাদেশ
+          </p>
+        </div>
+        <div class="info-card">
+          <h3>অংশগ্রহণ ফি</h3>
+          <p>
+            প্রাক্তন ছাত্র: <span class="highlight">ন্যূনতম ২০০০ টাকা</span><br><br>
+            বর্তমান ছাত্র: <span class="highlight">৫০০ টাকা</span>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Process Section -->
+  <section class="process-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>নিবন্ধন প্রক্রিয়া</h2>
+      </div>
+      <div class="steps-container">
+        <div class="step">
+          <div class="step-number">১</div>
+          <div class="step-content">
+            <h4>ফি প্রদান করুন</h4>
+            <p>বিকাশ / নগদ এর মাধ্যমে নির্ধারিত ফি প্রদান করুন।</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">২</div>
+          <div class="step-content">
+            <h4>রেজিস্ট্রেশন ফর্ম পূরণ</h4>
+            <p>রেজিস্ট্রেশন লিংকে যান এবং ফর্মটি খুলুন।</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">৩</div>
+          <div class="step-content">
+            <h4>তথ্য সাবমিট করুন</h4>
+            <p>প্রয়োজনীয় তথ্য পূরণ করুন এবং ট্রানজেকশন আইডি দিন।</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">৪</div>
+          <div class="step-content">
+            <h4>নিশ্চিতকরণ পান</h4>
+            <p>সাবমিট করার পর কনফার্মেশন ইমেইল পাবেন।</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 style="color: #ffffff; border-bottom-color: #ffffff;">যোগাযোগ</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <h4>ফোন</h4>
+          <p>+৮৮০ ১৭১২-৩৪৫৬৭৮</p>
+        </div>
+        <div class="contact-item">
+          <h4>ইমেইল</h4>
+          <p>info@askhm.edu.bd</p>
+        </div>
+        <div class="contact-item">
+          <h4>ঠিকানা</h4>
+          <p>আশুগঞ্জ ফার্টিলাইজার<br>ব্রাহ্মণবাড়িয়া, বাংলাদেশ</p>
+        </div>
+      </div>
+      
+      <!-- Important Dates -->
+      <div class="important-dates">
+        <h3>গুরুত্বপূর্ণ তারিখসমূহ</h3>
+        <div class="date-item">
+          <span>টাকা প্রদানের শেষ তারিখ:</span>
+          <span class="date-value">২০ নভেম্বর, ২০২৫</span>
+        </div>
+        <div class="date-item">
+          <span>সম্মেলনের তারিখ:</span>
+          <span class="date-value">৩ জানুয়ারী, ২০২৬ (শনিবার)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© ২০২৫ ASKHM - আশুগঞ্জ সার কারখানা হাফিজিয়া মাদ্রাসা। সকল অধিকার সংরক্ষিত।</p>
+    </div>
+  </footer>
+
+</body>
+</html>
